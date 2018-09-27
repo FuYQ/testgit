@@ -8,8 +8,8 @@ class Student():
 fyq = Student()
 
 class Python_student():
-    name = None
-    age = 0
+    name = "nana"
+    age = 18
     course = 'python'
     def doHomework(self):
         print("我在做作业")
@@ -17,4 +17,8 @@ class Python_student():
 yueyue = Python_student()
 yueyue.doHomework()
 print(yueyue.age)
-print(yueyue.__dict__)
+yueyue.name = "hehe"
+print(Python_student.name)
+print(id(Python_student.name))
+
+print(id(yueyue.name))
